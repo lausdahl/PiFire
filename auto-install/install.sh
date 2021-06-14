@@ -9,6 +9,8 @@
 # curl https://raw.githubusercontent.com/nebhead/pifire/master/auto-install/install.sh | bash
 #
 # NOTE: Pre-Requisites to run Raspi-Config first.  See README.md.
+python3 -m venv ~/pifire/.env
+source ~/pifire/.env/bin/activate
 
 # Must be root to install
 if [[ $EUID -eq 0 ]];then

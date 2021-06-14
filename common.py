@@ -42,9 +42,9 @@ def DefaultSettings():
 
 	settings['outpins'] = {
 		'power' : 4,
-		'auger' : 14,
-		'fan' : 15,
-		'igniter' : 18
+		'auger' : 19,
+		'fan' : 13,
+		'igniter' : 21
 	}
 
 	settings['inpins'] = { 'selector' : 17 }

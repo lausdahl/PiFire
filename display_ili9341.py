@@ -33,8 +33,8 @@ class Display:
 		self.WIDTH = 320
 		self.HEIGHT = 240
 		# Init Device
-		self.serial = spi(port=0, device=0, gpio_DC=24, gpio_RST=25)
-		self.device = ili9341(self.serial, active_low=False, width=self.WIDTH, height=self.HEIGHT, gpio_LIGHT=5)
+		self.serial = spi(port=0, device=0, gpio_DC=16, gpio_RST=20)
+		self.device = ili9341(self.serial, active_low=False, width=self.WIDTH, height=self.HEIGHT, gpio_LIGHT=12)
 		self.DisplaySplash()
 		time.sleep(0.5) # Keep the splash up for three seconds on boot-up - you can certainly disable this if you want 
 		self.ClearDisplay()

@@ -20,7 +20,7 @@ import RPi.GPIO as GPIO
 class GrillPlatform:
 
 	def __init__(self, outpins, inpins):
-		self.outpins = outpins # { 'power' : 4, 'auger' : 14, 'fan' : 15, 'igniter' : 18 }
+		self.outpins = outpins # { 'power' : 4, 'auger' : 19, 'fan' : 13, 'igniter' : 26 }
 		self.inpins = inpins # { 'selector' : 17 }
 		GPIO.setwarnings(False)
 		GPIO.setmode(GPIO.BCM)
